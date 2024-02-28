@@ -1,0 +1,47 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-size: 3em;
+	float: left;
+	margin-left: 5px;
+}
+
+
+/* Animation Keyframes */
+
+@keyframes m_move {
+	0% { top: 0px; left: 0px; color: yellow;}
+	25% { top: 50px; left: 0px; }
+	75% { top: 50px; left: -100px; }
+	100% { top: 0px; left: -80px; color: peachpuff;}
+}
+
+.m {
+	position: relative;
+	animation: m_move 2s forwards linear;
+}
+
+@keyframes l_move {
+	0% { left: 0px; color: yellow; }
+	100% { left: 75px; color: peachpuff; }
+}
+
+.l {
+	position: relative;
+	animation: l_move 2s forwards linear;
+}
